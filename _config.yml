@@ -1,46 +1,32 @@
-title: "Francisco Lopes - Technical Blog"
-description: "Computer Engineering | AI & Machine Learning | DevOps"
+title: "Francisco Lopes"
+description: "Computer Engineering Student | AI & DevOps"
 baseurl: ""
 url: "https://francisc0lopes.github.io"
 
-
-# Tema
+# Tema que suporta a estrutura que queres
 remote_theme: mmistakes/minimal-mistakes
-theme: minimal-mistakes
 
-# Plugins
+# Plugins essenciais apenas
 plugins:
-  - jekyll-remote-theme   # { changed code }
+  - jekyll-remote-theme
   - jekyll-feed
-  - jekyll-include-cache
   - jekyll-seo-tag
-  - jekyll-sitemap
 
-# Autor
+# Informações básicas
 author:
   name: "Francisco Lopes"
-  avatar: "/assets/images/avatar.jpg" # Vamos criar depois
-  bio: "Computer Engineering Student @ ISEL"
-  location: "Lisbon, Portugal"
   email: "franciscolopes1132003@gmail.com"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/Francisc0Lopes"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/francisco-lopes-116597379"
 
-# Layout
+# Default layouts
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "single"
-      author_profile: true
+      author_profile: false
   - scope:
       path: ""
-      type: "pages" 
+      type: "pages"
     values:
-      layout: "page"
+      layout: "single"

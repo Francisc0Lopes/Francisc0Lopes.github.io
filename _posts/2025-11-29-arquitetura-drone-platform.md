@@ -4,6 +4,7 @@ title: "Arquitetando uma Plataforma de Surveillance com Drones"
 date: 2024-11-30
 categories: [architecture, ai, devops]
 tags: python docker kubernetes computer-vision
+permalink: /projects/
 ---
 
 ## O Desafio

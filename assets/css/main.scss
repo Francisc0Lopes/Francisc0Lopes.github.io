@@ -1,39 +1,23 @@
 ---
 ---
 
-/* CSS personalizado apenas - sem imports complexos */
-
-.author__avatar img {
-    border-radius: 50%;
-    border: 3px solid #2563eb;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+// Apenas customizações básicas - o tema trata do resto
+.page__hero--overlay {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    .page__title {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
 }
 
-.page__title {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.tech-badge {
-    background: #2563eb;
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    display: inline-block;
-    margin: 0.2rem;
-}
-
-/* Project cards */
-.project-card {
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    transition: transform 0.2s;
-}
-
-.project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+// Garantir que as feature rows funcionam
+.feature__item {
+    text-align: center;
+    padding: 2rem 1rem;
+    
+    .feature__title {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
 }
