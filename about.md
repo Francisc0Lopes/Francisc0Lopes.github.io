@@ -1,6 +1,6 @@
 ---
-layout: single
-title: "Sobre Mim"
+layout: default
+title: "About me"
 permalink: /about/
 ---
 

@@ -1,7 +1,6 @@
 ---
-layout: single
+layout: default
 title: "Projetos"
-permalink: /projects/
 ---
 
 ## 🚀 Projetos em Destaque

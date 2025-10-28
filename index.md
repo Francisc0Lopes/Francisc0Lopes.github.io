@@ -1,29 +1,31 @@
 ---
-layout: home
+layout: default
 title: "Francisco Lopes"
-excerpt: "Computer Engineering Student | AI & DevOps "
-header:
-  overlay_image: /assets/images/header-bg.png
-  overlay_filter: 0.3
-  actions:
-    - label: "View Projects"
-      url: "/projects/"
-    - label: "Read Blog" 
-      url: "/posts/"
-feature_row:
-  - title: "AI & Machine Learning"
-    excerpt: "Computer Vision, Neural Networks, Predictive Analytics"
-    url: "/projects/"
-  - title: "DevOps & Cloud"
-    excerpt: "CI/CD, Docker, Kubernetes, AWS/Azure"
-    url: "/projects/"
-  - title: "Software Engineering"
-    excerpt: "Full-stack Development, System Architecture, APIs"
-    url: "/projects/"
 ---
+
+# Francisco Lopes
+**Computer Engineering Student | AI & DevOps Enthusiast**
+
+![Header Image](/assets/images/header-bg.png)
+
+[View Projects](/projects/) | [Read Blog](/posts/)
 
 ## 🚀 Welcome to My Technical Journey
 
 I'm a Computer Engineering student passionate about building innovative solutions with cutting-edge technologies.
 
-{% include feature_row %}
+## 🔧 My Expertise
+
+### 🤖 AI & Machine Learning
+Computer Vision, Neural Networks, Predictive Analytics  
+[Learn more](/projects/)
+
+### ⚙️ DevOps & Cloud  
+CI/CD, Docker, Kubernetes, AWS/Azure  
+[Learn more](/projects/)
+
+### 💻 Software Engineering
+Full-stack Development, System Architecture, APIs  
+[Learn more](/projects/)
+
+
