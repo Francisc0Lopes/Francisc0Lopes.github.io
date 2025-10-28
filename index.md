@@ -14,6 +14,11 @@ title: "Francisco Lopes"
 
 I'm a Computer Engineering student passionate about building innovative solutions with cutting-edge technologies.
 
+## 📚 Latest Blog Posts
+
+- [My First Technical Article](/2024/11/29/bem-vindo.html)
+- [Drone Platform Architecture](/2024/11/29/arquitetura-drone-platform.html)
+
 ## 🔧 My Expertise
 
 ### 🤖 AI & Machine Learning
@@ -23,9 +28,3 @@ Computer Vision, Neural Networks, Predictive Analytics
 ### ⚙️ DevOps & Cloud  
 CI/CD, Docker, Kubernetes, AWS/Azure  
 [Learn more](/projects/)
-
-### 💻 Software Engineering
-Full-stack Development, System Architecture, APIs  
-[Learn more](/projects/)
-
-
