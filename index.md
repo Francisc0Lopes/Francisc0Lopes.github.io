@@ -6,7 +6,6 @@ title: "Francisco Lopes"
 # Francisco Lopes
 **Computer Engineering Student | AI & DevOps Enthusiast**
 
-![Header Image](/assets/images/header-bg.png)
 
 [View Projects](/projects/) | [Read Blog](/posts/)
 
@@ -23,8 +22,5 @@ I'm a Computer Engineering student passionate about building innovative solution
 
 ### 🤖 AI & Machine Learning
 Computer Vision, Neural Networks, Predictive Analytics  
-[Learn more](/projects/)
-
 ### ⚙️ DevOps & Cloud  
 CI/CD, Docker, Kubernetes, AWS/Azure  
-[Learn more](/projects/)
