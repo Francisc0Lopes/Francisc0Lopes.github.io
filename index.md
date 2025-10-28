@@ -3,7 +3,7 @@ layout: home
 title: "Francisco Lopes"
 excerpt: "Computer Engineering Student | AI & DevOps "
 header:
-  overlay_image: /assets/images/header-bg.jpg
+  overlay_image: /assets/images/header-bg.png
   overlay_filter: 0.3
   actions:
     - label: "View Projects"
