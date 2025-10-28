@@ -11,6 +11,7 @@ minima:
 
 # Plugins
 plugins:
+  - jekyll-remote-theme   # { changed code }
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
