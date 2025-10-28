@@ -16,8 +16,8 @@ I'm a Computer Engineering student passionate about building innovative solution
 
 ## 📚 Latest Blog Posts
 
-- [My First Technical Article](/2024/11/29/bem-vindo.html)
-- [Drone Platform Architecture](/2024/11/29/arquitetura-drone-platform.html)
+- [My First Technical Article](_posts/2025/11/29/bem-vindo.html)
+- [Drone Platform Architecture](_posts/2025/11/29/arquitetura-drone-platform.html)
 
 ## 🔧 My Expertise
 
