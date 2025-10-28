@@ -1,10 +1,12 @@
 ---
 ---
 
-// CSS personalizado apenas - sem imports
+/* CSS personalizado apenas - sem imports complexos */
+
 .author__avatar img {
     border-radius: 50%;
     border: 3px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .page__title {
@@ -18,4 +20,20 @@
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
+    display: inline-block;
+    margin: 0.2rem;
+}
+
+/* Project cards */
+.project-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
