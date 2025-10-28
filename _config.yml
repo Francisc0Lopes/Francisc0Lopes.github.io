@@ -3,15 +3,44 @@ description: "Computer Engineering | AI & Machine Learning | DevOps"
 baseurl: ""
 url: "https://francisc0lopes.github.io"
 
-theme: minima
+
+# Tema
+remote_theme: mmistakes/minimal-mistakes
+minima:
+  skin: auto
+
+# Plugins
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
+# Autor
 author:
   name: "Francisco Lopes"
+  avatar: "/assets/images/avatar.jpg" # Vamos criar depois
+  bio: "Computer Engineering Student @ ISEL"
+  location: "Lisbon, Portugal"
   email: "franciscolopes1132003@gmail.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Francisc0Lopes"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/francisco-lopes-116597379"
 
-markdown: kramdown
-permalink: pretty
-
-github_username: Francisc0Lopes
+# Layout
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+  - scope:
+      path: ""
+      type: "pages" 
+    values:
+      layout: "single"
