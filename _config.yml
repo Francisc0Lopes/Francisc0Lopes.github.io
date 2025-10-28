@@ -6,8 +6,7 @@ url: "https://francisc0lopes.github.io"
 
 # Tema
 remote_theme: mmistakes/minimal-mistakes
-minima:
-  skin: auto
+theme: minimal-mistakes
 
 # Plugins
 plugins:
