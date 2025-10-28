@@ -1,0 +1,17 @@
+title: "Francisco Lopes - Technical Blog"
+description: "Computer Engineering | AI & Machine Learning | DevOps"
+baseurl: ""
+url: "https://francisc0lopes.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+author:
+  name: "Francisco Lopes"
+  email: "franciscolopes1132003@gmail.com"
+
+markdown: kramdown
+permalink: pretty
+
+github_username: Francisc0Lopes
