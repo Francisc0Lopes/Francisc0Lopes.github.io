@@ -1,6 +1,10 @@
 @import url('./main.css');
 
-.post-list {
+/* CORREÇÃO: 
+  O seletor foi alterado de ".post-list" para "#articles" 
+  para corresponder ao ID usado em posts.html.
+*/
+#articles {
   display: grid;
   gap: 1.5rem;
 }
@@ -27,7 +31,11 @@
   opacity: 0.8;
 }
 
-.article-content {
+/* CORREÇÃO: 
+  O seletor foi alterado de ".article-content" para "#content" 
+  para corresponder ao ID usado em posts.html.
+*/
+#content {
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
