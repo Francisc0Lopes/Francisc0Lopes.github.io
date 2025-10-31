@@ -1,0 +1,104 @@
+@import url('main.css');
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+#articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.article-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  background: #1c222b;
+}
+
+.article-card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.article-card button {
+  margin-top: 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.article-card button:hover {
+  opacity: 0.9;
+}
+
+#viewer {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+#back {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#back:hover {
+  opacity: 0.9;
+}
+
+#content {
+  line-height: 1.7;
+}
+
+#content pre {
+  background: #1c1f26;
+  padding: 1rem;
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+#content code {
+  color: #9cdcfe;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+

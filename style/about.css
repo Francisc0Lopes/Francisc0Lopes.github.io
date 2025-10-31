@@ -1,0 +1,55 @@
+@import url('main.css');
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: left;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.bio h2 {
+  color: var(--accent);
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+li::before {
+  content: "• ";
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
