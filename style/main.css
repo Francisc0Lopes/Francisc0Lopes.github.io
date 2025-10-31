@@ -1,27 +1,28 @@
 /* ==========================
-   MAIN.CSS — Estilos globais
+   MAIN.CSS — Blog moderno e profissional
    ========================== */
 
-/* Tema e variáveis */
+/* ===== Variáveis de tema ===== */
 :root {
-  --bg: #0f1115;
-  --text: #e8e8e8;
-  --accent: #00aaff;
-  --card-bg: #1a1d23;
-  --card-bg-hover: #22262f;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --bg: #f2f3f5;          /* fundo geral suave */
+  --text: #1f1f1f;        /* texto principal */
+  --subtext: #555;        /* texto secundário */
+  --accent: #3b82f6;      /* azul suave */
+  --card-bg: #ffffff;     /* cartões e header */
+  --card-border: #dcdcdc; /* contorno leve */
   --font: 'Inter', system-ui, sans-serif;
 }
 
-:root.light {
-  --bg: #fdfdfd;
-  --text: #222;
-  --accent: #0078ff;
-  --card-bg: #ffffff;
-  --card-bg-hover: #f4f4f4;
-  --shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+:root.dark {
+  --bg: #181a1f;
+  --text: #e6e6e6;
+  --subtext: #aaa;
+  --accent: #60a5fa;
+  --card-bg: #20242b;
+  --card-border: #2d2f34;
 }
 
+/* ===== Reset & base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -32,86 +33,154 @@ html, body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  line-height: 1.6;
+  line-height: 1.75;
   min-height: 100%;
+  font-size: 16px;
 }
 
+/* ===== Links ===== */
 a {
   color: var(--accent);
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #66c8ff;
+  color: #2563eb;
 }
 
-/* ===== Header / Nav ===== */
+/* ===== Header ===== */
 header {
   background: var(--card-bg);
-  box-shadow: var(--shadow);
-  padding: 1.2rem;
+  border-bottom: 1px solid var(--card-border);
+  padding: 2rem 1rem 1.2rem;
   text-align: center;
-  margin-bottom: 2rem;
-  border-radius: 0 0 1rem 1rem;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
-  margin: 0 0.5rem;
-  font-weight: 600;
+  color: var(--subtext);
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
 }
 
-/* ===== Layout base ===== */
+nav a:hover {
+  color: var(--accent);
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+  margin: 0.2rem auto 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== Layout ===== */
 main {
-  padding: 1.5rem;
-  max-width: 900px;
+  padding: 2.5rem 1.5rem;
+  max-width: 780px;
   margin: auto;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ===== Reutilizáveis ===== */
+/* ===== Artigos / Cards ===== */
 .card {
   background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, background 0.3s ease;
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-  background: var(--card-bg-hover);
-  transform: translateY(-3px);
+  border-color: var(--accent);
 }
 
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.card p {
+  color: var(--subtext);
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+/* ===== Citação / bloco destacado ===== */
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--subtext);
+}
+
+/* ===== Botões ===== */
 button {
   background: var(--accent);
-  color: white;
+  color: #fff;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.6rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
 }
 
 button:hover {
-  opacity: 0.85;
+  background: #2563eb;
 }
 
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: var(--subtext);
+  border-top: 1px solid var(--card-border);
+  background: var(--card-bg);
+  margin-top: 3rem;
+}
+
+/* ===== Responsividade ===== */
 @media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+  }
+
   main {
-    padding: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
   }
 }
