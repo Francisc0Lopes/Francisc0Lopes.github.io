@@ -1,42 +1,47 @@
-// POSTS.JS — lista e carregamento de artigos Markdown
 document.addEventListener("DOMContentLoaded", async () => {
-  const root = document.documentElement;
-  const saved = localStorage.getItem("theme");
-  if (saved === "light") root.classList.add("light");
-
-  const container = document.getElementById("posts-container");
-  const articleView = document.getElementById("article-view");
-
-  if (!container) return;
+  const list = document.getElementById("articles");
+  const viewer = document.getElementById("viewer");
+  const content = document.getElementById("content");
+  const backBtn = document.getElementById("back");
 
   try {
     const res = await fetch("./posts/index.json");
+    if (!res.ok) throw new Error("Erro ao carregar a lista de artigos.");
     const posts = await res.json();
 
-    container.innerHTML = posts
+    // Lista de artigos
+    list.innerHTML = posts
       .map(
         (p) => `
         <div class="post-card">
           <h2>${p.title}</h2>
           <p>${p.description}</p>
-          <a href="?post=${encodeURIComponent(p.file)}">Ler artigo →</a>
+          <button data-file="${p.file}">Ler artigo</button>
         </div>
       `
       )
       .join("");
 
-    // Verifica se foi selecionado um artigo
-    const params = new URLSearchParams(window.location.search);
-    const postFile = params.get("post");
-
-    if (postFile && articleView) {
-      const resp = await fetch(`./posts/${postFile}`);
+    // Abrir artigo
+    list.addEventListener("click", async (e) => {
+      if (!e.target.matches("button[data-file]")) return;
+      const file = e.target.getAttribute("data-file");
+      const resp = await fetch(`./posts/${file}`);
+      if (!resp.ok) throw new Error("Erro ao carregar o artigo.");
       const md = await resp.text();
-      const html = marked.parse(md);
-      articleView.innerHTML = `<div class="article-content">${html}</div>`;
-      container.style.display = "none";
-    }
+      content.innerHTML = marked.parse(md);
+      list.style.display = "none";
+      viewer.style.display = "block";
+    });
+
+    // Voltar
+    backBtn.addEventListener("click", () => {
+      viewer.style.display = "none";
+      list.style.display = "grid";
+      content.innerHTML = "";
+    });
   } catch (err) {
-    container.innerHTML = "<p>Não foi possível carregar os artigos.</p>";
+    console.error(err);
+    list.innerHTML = "<p>❌ Não foi possível carregar os artigos.</p>";
   }
 });
