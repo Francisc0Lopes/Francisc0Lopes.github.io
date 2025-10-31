@@ -1,60 +1,117 @@
+/* ==========================
+   MAIN.CSS — Estilos globais
+   ========================== */
+
+/* Tema e variáveis */
 :root {
-  --bg: #0d1117;
-  --text: #e6edf3;
-  --accent: #58a6ff;
-  --card-bg: #161b22;
-  --radius: 10px;
+  --bg: #0f1115;
+  --text: #e8e8e8;
+  --accent: #00aaff;
+  --card-bg: #1a1d23;
+  --card-bg-hover: #22262f;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --font: 'Inter', system-ui, sans-serif;
 }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', system-ui, sans-serif;
+:root.light {
+  --bg: #fdfdfd;
+  --text: #222;
+  --accent: #0078ff;
+  --card-bg: #ffffff;
+  --card-bg-hover: #f4f4f4;
+  --shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-header {
-  padding: 4rem 1rem 2rem;
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  min-height: 100%;
 }
 
-h1 {
+a {
   color: var(--accent);
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-main {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.btn {
-  background: var(--accent);
-  color: white;
   text-decoration: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: var(--radius);
-  transition: transform 0.2s, opacity 0.2s;
+  transition: color 0.2s ease;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  opacity: 0.9;
+a:hover {
+  color: #66c8ff;
+}
+
+/* ===== Header / Nav ===== */
+header {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+/* ===== Layout base ===== */
+main {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 footer {
-  margin-top: 3rem;
+  text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  opacity: 0.7;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== Reutilizáveis ===== */
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.card:hover {
+  background: var(--card-bg-hover);
+  transform: translateY(-3px);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
 }
