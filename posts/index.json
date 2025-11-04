@@ -4,11 +4,5 @@
     "file": "begining.md",
     "date": "2025-11-04",
     "tags": ["Tech", "Academic", "Blog"]
-  },
-  {
-    "title": "Introdução à deteção de anomalias em séries temporais",
-    "file": "anomalies.md",
-    "date": "2025-09-02",
-    "tags": ["Python", "Machine Learning", "Data Science"]
   }
 ]
