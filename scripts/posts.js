@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         (p) => `
         <div class="post-card">
           <h2>${p.title}</h2>
-          <p>${p.description}</p>
           <button data-file="${p.file}">Ler artigo</button>
         </div>
       `
