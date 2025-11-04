@@ -13,14 +13,14 @@ The answer is centered on **Continuous Growth, Knowledge Sharing, and Community.
 
 This platform, launched in October 2025, marks a significant phase: the final year of my Bachelor’s degree in **Computer Engineering, Networks, and Telecommunications** at the esteemed **ISEL (Instituto Superior de Engenharia de Lisboa).**
 
-### 🎯 What is the Purpose of This Blog?
+###  What is the Purpose of This Blog?
 
 This blog serves as a focused technical journal, aiming to **share knowledge** and consolidate learning:
 
 1.  **Academic Insights:** I intend to **translate complex academic knowledge** from my most challenging modules and projects into accessible, practical articles. This is about taking what I learn in class—be it networking protocols or system architectures—and making it directly useful.
 2.  **Hands-On Experience:** Beyond the curriculum, this is where I share what I'm currently **building and exploring**. I'll be posting takeaways from side projects, experiments in cloud computing, and lessons learned from development challenges.
 
-### 💡 My Commitment to Sharing
+###  My Commitment to Sharing
 
 My background in Engineering, Networks, and Telecommunications is broad, and the content will reflect this diversity. You can expect articles that **explore the practical application of theory**, specifically:
 
@@ -32,7 +32,7 @@ Ultimately, I hope this effort serves as a helpful resource for others. If shari
 
 ---
 
-### 🎓 Um Agradecimento ao ISEL (A Minha Instituição)
+###  Um Agradecimento ao ISEL (A Minha Instituição)
 
 Gostaria de deixar um **agradecimento especial a todos os estudantes e docentes do ISEL**. Esta instituição proporciona um **ambiente exigente e estimulante** que tem sido fundamental tanto para o meu percurso académico como pessoal.
 
