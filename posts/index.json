@@ -1,9 +1,9 @@
 [
   {
-    "title": "Como usei Docker num projeto Java",
-    "file": "docker-java.md",
-    "date": "2025-10-15",
-    "tags": ["DevOps", "Java", "Docker"]
+    "title": "Decoding the 'Why': The Launch of This Tech Blog",
+    "file": "begining.md",
+    "date": "2025-11-04",
+    "tags": ["Tech", "Academic", "Blog"]
   },
   {
     "title": "Introdução à deteção de anomalias em séries temporais",
